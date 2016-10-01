@@ -1,0 +1,25 @@
+table {
+  border :1px solid blue;
+}
+td {
+  width: 50px;
+  height: 50px;
+  color: red;
+  line-height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+tr:nth-child(odd) > td:nth-child(odd), tr:nth-child(even) > td:nth-child(even){
+  background: black;
+}
+
+.circle {
+	width: 25px;
+	height: 25px;
+	background: blue;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+   margin: auto;
+}
