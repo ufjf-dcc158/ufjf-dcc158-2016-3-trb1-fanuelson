@@ -1,0 +1,23 @@
+{
+  "name": "trabalho-1-lab-6",
+  "version": "1.0.0",
+  "description": "Primeiro trabalho.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufjf-dcc158/ufjf-dcc158-2016-3-trb1-fanuelson.git"
+  },
+  "keywords": [
+    "trabalho1",
+    "lab6"
+  ],
+  "author": "Fanuel Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ufjf-dcc158/ufjf-dcc158-2016-3-trb1-fanuelson/issues"
+  },
+  "homepage": "https://github.com/ufjf-dcc158/ufjf-dcc158-2016-3-trb1-fanuelson#readme"
+}
