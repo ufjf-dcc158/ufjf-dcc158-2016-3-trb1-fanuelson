@@ -3,8 +3,9 @@ function calcRaizes(coeficientes) {
    var raizes = {};
    var deltas = calcDelta(coeficientes);
    if(deltas) {
-      raizes.x1 = (- coeficientes.b + deltas.d1) / 2 * coeficientes.a;
-      raizes.x2 = (- coeficientes.b + deltas.d2) / 2 * coeficientes.a;
+      raizes.x1 = (- coeficientes.b + deltas.d1) / (2 * coeficientes.a);
+      raizes.x2 = (- coeficientes.b + deltas.d2) / (2 * coeficientes.a);
+      raizes.deltas = deltas;
    }
    return deltas ? raizes : null;
 }

@@ -9,7 +9,8 @@ var reqMap = {
   "/primos.html": handlers.primos,
   "/equacao.html": handlers.equacao,
   "/xadrez.html": handlers.xadrez,
-  "/xadrez.css":handlers.xadrezcss
+  "/xadrez.css":handlers.xadrezcss,
+  "/xadrez.json":handlers.xadrezjson
 };
 
 function route(caminho, req, res) {
