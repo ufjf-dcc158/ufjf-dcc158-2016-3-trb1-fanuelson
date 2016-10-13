@@ -43,10 +43,10 @@ function aleatorios(req, res) {
 function primos(req, res) {
    var n1 = url.parse(req.url, true).query.n1;
    var n2 = url.parse(req.url, true).query.n2;
-   var exemplo = "primos.html?n1=10&n2=80"
+   var exemplo = "/primos.html?n1=10&n2=80"
    var result = primoUtils.getPrimosEntre(n1, n2);
    result = result ? result : "Parametros invalidos.\nEx: "+exemplo;
-   res.writeHead(200, {"Content-Type": "text/plain"});
+   res.writeHead(200, {"Content-Type": "text/html"});
    res.write(result.toString());
    res.end();
 }
@@ -71,6 +71,11 @@ function equacao(req, res) {
          var raizes = {};
          if(coeficientes && coeficientes.a && coeficientes.b && coeficientes.c) {
             raizes = equacaoSegundoGrau.calcRaizes(coeficientes);
+         }
+         if(!raizes) {
+            raizes = {
+               mensagem: "Nao existem raizes reais"
+            };
          }
          res.write(JSON.stringify(raizes, null, 2));
          res.end();
